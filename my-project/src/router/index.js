@@ -9,8 +9,5 @@ export default new Router({
 		path: '/',
 		name: 'Index',
 		component: Index
-
-
-
 	}]
 })
