@@ -1,0 +1,108 @@
+{
+	"ret":true,
+	"data":{
+		"swiperList":[{
+			"id": "1001",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/5c/969bfa7af00a2702.jpg_640x200_e1b76963.jpg",
+  			"link":"list"
+  		},{
+  			"id":"1002",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1804/bd/8e4a1c3f470d3702.jpg_640x200_fdd137a8.jpg",
+  			"link":"list"
+		}],
+		"iconList":[{
+			"id": "1001",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+  			"link":"list",
+  			"title":"故宫"
+		},{
+			"id": "1002",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+  			"link":"list",
+  			"title":"化学剂"
+		},{
+			"id": "1004",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+  			"link":"list",
+  			"title":"化剂"
+		},{
+			"id": "1005",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+  			"link":"list",
+  			"title":"化剂"
+		},{
+			"id": "1006",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+  			"link":"list",
+  			"title":"化剂"
+		},{
+			"id": "1007",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+  			"link":"list",
+  			"title":"化剂"
+		},{
+			"id": "1008",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+  			"link":"list",
+  			"title":"化剂"
+		},{
+			"id": "1009",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+  			"link":"list",
+  			"title":"化剂"
+		},{
+			"id": "1010",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+  			"link":"list",
+  			"title":"化剂"
+		},{
+			"id": "1011",
+  			"imgUrl":"http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+  			"link":"list",
+  			"title":"化剂"
+		}],
+    "sightsList":[{
+      "id":"1001",
+      "ingUrl":"http://img1.qunarzz.com/sight/p0/1804/c8/c88bb5e69c9a9c5ea3.img.jpg_200x200_740720ff.jpg",
+      "title":"故宫",
+      "desc":"发烧的发烧发啊的沙发沙发阿道夫",
+      "price":"20"
+    },{
+      "id":"1002",
+      "ingUrl":"http://img1.qunarzz.com/sight/p0/1804/c8/c88bb5e69c9a9c5ea3.img.jpg_200x200_740720ff.jpg",
+      "title":"故宫",
+       "desc":"发烧的发烧发啊的沙发沙发阿道夫",
+      "price":"20"
+    },{
+      "id":"1003",
+      "ingUrl":"http://img1.qunarzz.com/sight/p0/1804/c8/c88bb5e69c9a9c5ea3.img.jpg_200x200_740720ff.jpg",
+      "title":"故宫",
+      "desc":"发烧的发烧发啊的沙发沙发阿道夫",
+      "price":"20"
+    },{
+      "id":"1004",
+      "ingUrl":"http://img1.qunarzz.com/sight/p0/1804/c8/c88bb5e69c9a9c5ea3.img.jpg_200x200_740720ff.jpg",
+      "title":"故宫",
+       "desc":"发烧的发烧发啊的沙发沙发阿道夫",
+      "price":"20"
+    },{
+      "id":"1005",
+      "ingUrl":"http://img1.qunarzz.com/sight/p0/1804/c8/c88bb5e69c9a9c5ea3.img.jpg_200x200_740720ff.jpg",
+      "title":"故宫",
+      "desc":"发烧的发烧发啊的沙发沙发阿道夫",
+      "price":"20"
+    },{
+      "id":"1006",
+      "ingUrl":"http://img1.qunarzz.com/sight/p0/1804/c8/c88bb5e69c9a9c5ea3.img.jpg_200x200_740720ff.jpg",
+      "title":"故宫",
+       "desc":"发烧的发烧发啊的沙发沙发阿道夫",
+      "price":"20"
+    },{
+      "id":"1007",
+      "ingUrl":"http://img1.qunarzz.com/sight/p0/1804/c8/c88bb5e69c9a9c5ea3.img.jpg_200x200_740720ff.jpg",
+      "title":"故宫",
+      "desc":"发烧的发烧发啊的沙发沙发阿道夫",
+      "price":"20"
+    }]
+	}
+}
