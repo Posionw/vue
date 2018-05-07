@@ -22,7 +22,7 @@ export default {
           pagination: {
             el: '.swiper-pagination'
           },
-          autoplay:3000
+          autoplay: true
         }
   	}
   }

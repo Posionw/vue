@@ -1,6 +1,6 @@
 <template>
 	<div class="main">
-  		<index-header></index-header>
+  		<index-header :city="$store.state.city"></index-header>
   		<index-swiper :list="swiperInfo"></index-swiper>
   		<index-icons :list="iconsInfo"></index-icons>
       <index-scroller :list="sightsInfo" class="scoller"></index-scroller>
@@ -30,7 +30,7 @@ export default {
   },
   methods:{
   	getIndexData(){
-  		axios.get('/api/index.json')
+  		axios.get('/api/index.json?city=' + this.$store.state.city)
   		  .then(this.handleGetDataSucc.bind(this))
   		  .catch(this.handleGetDataErr.bind(this))
   	},
@@ -39,14 +39,29 @@ export default {
   		this.swiperInfo = data.swiperList
   		this.iconsInfo = data.iconList
       this.sightsInfo = data.sightsList
-  		console.log(data)
+      console.log(this.$store.state.city)
+      if (!this.$store.state.city){
+        // this.$store.commit("changeCity",data.city)
+        this.$store.dispatch('changeCityDelayFiveSeconds',data.city)
+      }
   	},
   	handleGetDataErr(){
   		console.log('error')
   	}
   },
   created (){
-  	this.getIndexData();
+
+  },
+  activated(){
+    this.getIndexData();
+  },
+  mounted(){
+    this.getIndexData();
+  },
+  watch: {
+    '$store.state.city' () {
+      this.getIndexData();
+    }
   }
 }
 </script>

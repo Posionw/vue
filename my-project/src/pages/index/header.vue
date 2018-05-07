@@ -5,13 +5,18 @@
   		<span class="iconfont search-icon">&#xe632;</span>
   		请输入搜索内容
   	</div>
-  	<div class="city">乌鲁木齐</div>
+  	<div class="city">
+  		<router-link to="/Daytrip/123">
+  			{{city}}
+  		</router-link>
+  	</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'index-header'
+  name: 'index-header',
+  props:['city']
 }
 </script>
 <style lang="stylus" scoped>
