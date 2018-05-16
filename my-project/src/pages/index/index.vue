@@ -3,20 +3,22 @@
   		<index-header :city="$store.state.city"></index-header>
   		<index-swiper :list="swiperInfo"></index-swiper>
   		<index-icons :list="iconsInfo"></index-icons>
-      <index-scroller :list="sightsInfo" class="scoller"></index-scroller>
+      <index-scroller :sights="sightsInfo" class="scoller"></index-scroller>
     </div>
 </template>
 
 <script>
-import IndexHeader from './header.vue'
+// import IndexHeader from './header.vue'
 import IndexSwiper from './swiper.vue'
 import IndexIcons from './icons.vue'
 import IndexScroller from './scoller.vue'
+import { mapState,mapActions } from 'vuex'
 import axios from 'axios'
 export default {
   name: 'index',
   components:{
-  	IndexHeader,
+  	// IndexHeader,
+    IndexHeader:() => import('./header.vue'),
   	IndexSwiper,
   	IndexIcons,
     IndexScroller
@@ -28,9 +30,18 @@ export default {
       sightsInfo:[]
   	}
   },
+  computed:{
+    ...mapState({
+      city:'city'
+    })
+  },
   methods:{
+    ...mapActions({
+      delayCity:'changeCityDelayFiveSeconds'
+    }),
   	getIndexData(){
-  		axios.get('/api/index.json?city=' + this.$store.state.city)
+      axios.get('/api/index.json?city='+ this.city)
+  		// axios.get('/api/index.json?city=' + this.$store.state.city)
   		  .then(this.handleGetDataSucc.bind(this))
   		  .catch(this.handleGetDataErr.bind(this))
   	},
@@ -42,7 +53,9 @@ export default {
       console.log(this.$store.state.city)
       if (!this.$store.state.city){
         // this.$store.commit("changeCity",data.city)
-        this.$store.dispatch('changeCityDelayFiveSeconds',data.city)
+        //
+        // this.$store.dispatch('changeCityDelayFiveSeconds',data.city)
+        this.delayCity(data.city)
       }
   	},
   	handleGetDataErr(){
@@ -59,8 +72,10 @@ export default {
     this.getIndexData();
   },
   watch: {
-    '$store.state.city' () {
+    // '$store.state.city' () {
+    'city' () {
       this.getIndexData();
+      console.log('222')
     }
   }
 }

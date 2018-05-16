@@ -8,3 +8,4 @@ a:hover{text-decoration:underline;color:#FF3300}
 h1{font-size:16px;font-weight:600;color:#666} .left{float:left} .right{float:right} .clear{clear:both}
 i{font-style: normal;}
 html{font-size: 50px;}
+input{border:none;}

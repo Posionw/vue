@@ -6,7 +6,7 @@
   		请输入搜索内容
   	</div>
   	<div class="city">
-  		<router-link to="/Daytrip/123">
+  		<router-link to="/City">
   			{{city}}
   		</router-link>
   	</div>
